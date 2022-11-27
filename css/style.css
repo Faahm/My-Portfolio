@@ -82,6 +82,7 @@ strong {
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
   transition: transform 200ms ease-in-out;
+  border-radius: 5px;
 }
 
 .btn:hover {
@@ -130,6 +131,7 @@ h3 {
   padding: 0.25em 1em;
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
+  border-radius: 10px;
 }
 
 .section__subtitle--work {
@@ -218,7 +220,8 @@ header {
 
 .hamburger {
   display: block;
-  position: relative;
+  position: fixed;
+  right: 0.5em;
 }
 
 .hamburger,
@@ -345,6 +348,7 @@ header {
 
 .about-me__img {
   box-shadow: var(--bs);
+  border-radius: 10px;
 }
 
 @media (min-width: 600px) {
@@ -375,8 +379,11 @@ header {
   .about-me__img {
     grid-area: img;
     position: relative;
-    z-index: 2;
-    padding: 0.5em;
+    z-index: 3;
+  }
+
+  .about-me__img-text {
+    grid-column: 2/-1;
   }
 }
 
