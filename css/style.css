@@ -398,7 +398,8 @@ header {
 
 .portfolio {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* change px to adjust number of columns: */
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .portfolio-grid {
